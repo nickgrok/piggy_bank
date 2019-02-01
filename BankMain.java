@@ -1,3 +1,6 @@
+// Main method for Piggy Bank program
+// Calls new BankGUI and makes it visible
+
 import java.util.*;
 
 class BankMain
