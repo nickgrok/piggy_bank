@@ -1,7 +1,7 @@
 class Login
 {
-	private String[] users = {"MsLadybird", "Stinkolaus", "MuscleButt"};
-	private String[] passwords = {"artist", "soccer", "legos", "admin"};
+	private String[] users = {"user1", "user2", "user3"};
+	private String[] passwords = {"password_1", "password_2", "password_3", "admin"};
 
 
 	private String user;
