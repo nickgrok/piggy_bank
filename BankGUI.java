@@ -17,7 +17,7 @@ class BankGUI extends JFrame
 	{
 		super();
 		//setLayout(new BorderLayout());
-		String title = "Grokhowsky Bank";
+		String title = "Piggy Bank";
 		setTitle(title);
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 		setResizable(true);
