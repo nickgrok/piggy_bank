@@ -1,3 +1,5 @@
+// GUI to open login and if login isVerified opens appropriate account
+
 import java.util.*;
 import java.io.*;
 import java.awt.*;
@@ -112,7 +114,8 @@ class BankGUI extends JFrame
 
 	}
 
-
+	// respond function calls action listner if 'submit' button is pressed it test the user name and password in Login parameter log and if it is verified opens an account
+	// takes 5 parameters - a JButton to access teh action listener, JTextField to access the user name, JPasswordField to acces the password, Login to test the user name and password, and boolean if login is succesful
 	public void respond(JButton b, JTextField tf, JPasswordField pf, Login log, boolean login)
 	{
 		b.addActionListener(new ActionListener() {
@@ -123,7 +126,7 @@ class BankGUI extends JFrame
 
 				switch(s)
 				{
-					case("SUBMIT"):			log.setUser(tf.getText());
+					case("SUBMIT"):					log.setUser(tf.getText());
 											char [] password = pf.getPassword();
 											String pw = String.valueOf(password);
 											log.setPassword(pw);
@@ -132,8 +135,8 @@ class BankGUI extends JFrame
 																						
 												AccountGUI open = new AccountGUI(tf.getText(), pw);
 												open.setVisible(true);
-
-												//dispose();														
+												login = true;
+												dispose();														
 											}
 					break;
 				}
